@@ -4,14 +4,14 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
-let a = 7;
-let b = 40;
+// let a = 7;
+// let b = 40;
 
-if(a > b) {
-    console.log(a + " è superiore" + b );
-} else {
-    console.log(b + " è superiore!" + a );
-}
+// if(a > b) {
+//     console.log(a + " è superiore" + b );
+// } else {
+//     console.log(b + " è superiore!" + a );
+// }
 
 
 /*
@@ -80,7 +80,14 @@ for (let i = 0; i <= 15; i++) { // Stampa solo numeri pari del ciclo...
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+// let num1 = 5;
+// let num2 = 3;
+
+// if(num1 === 8 || num2 === 8 || num1 + num2 === 8 || num1 - num2 === 8) {
+//    console.log("True");
+// } else {
+//    console.log("False");
+// }
 
 /* ESERCIZIO EXTRA 2
 Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -88,17 +95,39 @@ C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha d
 Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-// let totalShoppingCart = 1; // Esempio scontistica...
-// let price = (spesaMinima > 100) ? 50 : 100;
+// let totalShoppingCart = 40;
+// let totalCheckout;
 
-// console.log(price);
+// if (totalShoppingCart > 50) {
+//   totalCheckout = totalShoppingCart;
+// } else {
+//   totalCheckout = totalShoppingCart + 10;
+// }
+
+// console.log(totalCheckout);
+
 
 /* ESERCIZIO EXTRA 3
   Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando, usando l'algoritmo del codice precedente, se le spedizioni siano gratuite oppure no e e calcolando il totale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+
+// let totalShoppingCart = 60;
+// let totalCheckout;
+
+// // Applica lo sconto del 20% su ogni prodotto
+// let discount = totalShoppingCart * 0.2;
+// totalShoppingCart -= discount;
+
+// // Determina se le spedizioni sono gratuite o meno
+// if (totalShoppingCart > 50) {
+//   totalCheckout = totalShoppingCart;
+// } else {
+//   totalCheckout = totalShoppingCart + 10;
+// }
+
+// console.log(totalCheckout); // Output: 48 (60 - 20% sconto + 10 per la spedizione)
 
 /*  ESERCIZIO EXTRA 4
   Usa un operatore ternaio per assegnare ad una variabile chiamata "gender" i valori "male" o "female".
@@ -106,8 +135,23 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
   Es. se isMale e' vero, il valore di gender deve essere "male"
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+// let isMale = true;
+// let gender = isMale ? "male" : "female";
+
+// console.log(gender); // Output: "male"
 
 /* ESERCIZIO EXTRA 5
   Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
 */
+
+for (let i = 1; i <= 100; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (i % 3 === 0) {
+    console.log("Fizz");
+  } else if (i % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(i);
+  }
+}
